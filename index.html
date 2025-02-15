@@ -6,57 +6,23 @@
     <title>Portfolio - Your Name</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Ubuntu', sans-serif;
-            background-color: #f5f5f5;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .profile img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-        .note {
-            font-style: italic;
-            font-size: small;
-        }
-        a{
-            color: black;
-        }
-        a:hover{
-            color: blue;
-        }
-        .container {
-            max-width: 800px;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-        }
-    </style>
+    <script src="index.js"></script>
 </head>
 <body>
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="personal-resume.pdf" target="_blank">CV</a>
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+    </nav>
     <div class="container">
         <header>
             <div class="profile">
-                <img src="4200_3_03.jpg" alt="Shihab">
-                <h1>Hey 👋 I'm Md Shihab Hasan</h1>
+                <img src="images/header-image.jpg" alt="Shihab">
+                <h1>Hey <span class="waving-hand">👋</span> I'm Shihab Hasan</h1>
                 <p>Computer Science Student | Web Developer | Tech Enthusiast</p>
-                <p>Email: shihabhasan0161@gmail.com | <a href="https://github.com/shihabhasan0161" target="_blank">GitHub</a></p>
+                <p><a href="https://www.linkedin.com/in/shihab-hasan-8444b2204/" target="_blank">LinkedIn</a> | <a href="https://github.com/shihabhasan0161" target="_blank">GitHub</a></p>
             </div>
         </header>
 
@@ -65,38 +31,124 @@
             <p>I am a Computer Science student at York University, passionate about technology and web development. I enjoy working on projects involving Java, Python, JavaScript, and more. <div class="note"><p>(This is a demo version of my portfolio website, I will be updating the website frequently)</p></div></p>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <h3>Self-Learning Projects (Ongoing)</h3>
-            <div>
-                <p>Exploring fundamental topics like data structures, algorithms, and database management.</p>
-                <p>Building web development projects using JavaScript, HTML, CSS, React, Node.JS.</p>
-                <p>Experimenting with small tasks like creating simple programs (e.g., weather app or movie recommendation engine).</p>
-            </div>
-            <p>Technologies: Java, Python, JavaScript, HTML, CSS, React, Node.JS</p>
-        </section>
-
         <section id="projects">
             <h2>Projects</h2>
-            <div>
-                <p><strong>Portfolio Website:</strong> Creating a personal portfolio using HTML, CSS, and JavaScript to showcase my skills.</p>
-                <p><strong>Movie Recommendation Engine:</strong> Developed a movie recommendation website as part of a personal university project.</p>
-                <p><strong>AI Chatbot:</strong> Developing a simple AI chatbot with useful functionalities using Python and API Integration</p>
+            <div class="project-grid">
+                <!-- Portfolio Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="demo-image.jpg" alt="Portfolio Website Demo">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal portfolio using HTML, CSS, and JavaScript to showcase skills and projects.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-btn view-btn" target="_blank">View Live</a>
+                            <a href="#" class="project-btn github-btn" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Movie Recommendation Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="demo-image.jpg" alt="Movie Recommendation Demo">
+                    </div>
+                    <div class="project-content">
+                        <h3>Movie Recommendation Engine</h3>
+                        <p>A movie recommendation website built as a university project.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-btn view-btn" target="_blank">View Live</a>
+                            <a href="#" class="project-btn github-btn" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- AI Chatbot Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="demo-image.jpg" alt="AI Chatbot Demo">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Chatbot</h3>
+                        <p>A simple AI chatbot with useful functionalities using Python and API Integration.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-btn view-btn" target="_blank">View Live</a>
+                            <a href="#" class="project-btn github-btn" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
-            <div>
-                <p>Programming Languages: Java, Python, JavaScript</p>
-                <p>Frameworks & Libraries: React, NodeJS, HTML, CSS</p>
-                <p>Tools: Git, GitHub, SQL, Google Sheets, macOS, Windows, Shell</p>
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-icons">
+                        <div class="skill-item">
+                            <img src="images/skills/java.png" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/js.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/python.png" alt="Python">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Frameworks & Libraries -->
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-icons">
+                        <div class="skill-item">
+                            <img src="images/skills/react.png" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/nodejs.png" alt="NodeJS">
+                            <span>NodeJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/spring-boot.png" alt="NodeJS">
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/html.png" alt="HTML5">
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/css-3.png" alt="CSS3">
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-icons">
+                        <div class="skill-item">
+                            <img src="images/skills/github-sign.png" alt="GitHub">
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/sql.png" alt="SQL">
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/vscode.png" alt="VS Code">
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="technical-interests">
-            <h2>Technical Interests</h2>
-            <p>I enjoy solving algorithmic and data structure challenges on platforms like LeetCode and Codeforces, as it enhances my problem-solving skills and logical thinking. I am passionate about bringing innovative ideas to life by leveraging technology to build impactful solutions.</p>
         </section>
 
         <footer>
