@@ -1,0 +1,13 @@
+---
+import PostsList from "@/components/PostsList.astro";
+import Layout from "@/layouts/Layout.astro";
+import type { Metadata } from "@/lib/shared-metadata";
+
+const metadata: Metadata = {
+  title: "Blog - Shihab Hasan",
+};
+---
+
+<Layout title="Blog" {metadata}>
+  <PostsList />
+</Layout>

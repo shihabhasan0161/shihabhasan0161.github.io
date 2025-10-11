@@ -1,0 +1,46 @@
+---
+import "@/styles/global.css";
+
+import Footer from "@/components/Footer.astro";
+import Head from "@/components/Head.astro";
+import Header from "@/components/Header.astro";
+import { sharedMetadata, type Metadata } from "@/lib/shared-metadata";
+import { Font } from "astro:assets";
+import { ClientRouter } from "astro:transitions";
+
+interface Props {
+  title?: string;
+  metadata?: Metadata;
+}
+
+const { title, metadata } = Astro.props;
+const allMetadata: Metadata = {
+  ...sharedMetadata,
+  ...metadata,
+  og: {
+    ...sharedMetadata.og!,
+    ...metadata?.og,
+  },
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head {...allMetadata} />
+
+    <Font cssVariable="--font-inter" preload />
+    <Font cssVariable="--font-satoshi" preload />
+    <slot name="extra-fonts" />
+    <title>Shihab Hasan</title>
+    <ClientRouter />
+  </head>
+  <body class="font-body mx-auto max-w-2xl bg-zinc-900 px-5 md:px-0">
+    <Header />
+    <main class="mt-12 mb-24 space-y-20">
+      {title && <h1 class="font-display mb-6 text-2xl font-semibold text-zinc-300">{title}</h1>}
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
