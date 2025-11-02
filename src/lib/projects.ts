@@ -7,11 +7,11 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "Student Expense Tracker",
+    name: "SmartStudent",
     description:
       "A web application that helps students track their expenses and manage their budgets effectively.",
     tech: ["Spring Boot", "React", "MongoDB", "CSS", "Docker", "Render", "Netlify"],
-    link: "https://github.com/shihabhasan0161/Student-Expense-Tracker---Backend",
+    link: "https://github.com/shihabhasan0161/SmartStudent-Backend",
   },
   {
     name: "CommuterBuddy",
