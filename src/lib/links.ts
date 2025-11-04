@@ -24,12 +24,6 @@ const links: Link[] = [
     icon: LinkedInLogo,
     disabled: false,
   },
-  {
-    name: "Resume",
-    href: "https://drive.google.com/file/d/1WFXB5dViAl_Zl9hBVCjl-3LamxlKfGg6/view?usp=sharing",
-    icon: CvDocumentIcon,
-    disabled: false,
-  },
 ];
 
 export default links;
