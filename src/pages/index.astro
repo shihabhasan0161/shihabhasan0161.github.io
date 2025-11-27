@@ -8,14 +8,22 @@ import links from "@/lib/links";
 
 <Layout title="Hello, I'm Shihab 👋🏻">
   <div
-    class="prose prose-zinc prose-strong:text-stone-400 prose-strong:font-medium prose-a:text-stone-400 prose-a:hover:text-stone-400/70 prose-a:transition-colors mt-6 space-y-5 text-zinc-300"
+    class="prose prose-zinc dark:prose-invert prose-strong:text-zinc-900 dark:prose-strong:text-zinc-100 prose-a:text-indigo-600 dark:prose-a:text-indigo-400 prose-a:no-underline hover:prose-a:underline mt-6 space-y-5"
   >
     <p>
-      A Computer Science student at York University, currently seeking Summer 2026 internship opportunities. I’m passionate about building data-driven and scalable software, learning new technologies, and delivering impactful solutions. Experienced as a Backend Developer Intern and AI/ML Engineer, I enjoy solving complex problems, collaborating across teams, and contributing to open-source projects.
+      A Computer Science student at York University, currently seeking Summer 2026 internship
+      opportunities. I&apos;m passionate about building data-driven and scalable software, learning new
+      technologies, and delivering impactful solutions. Experienced as a Backend Developer Intern
+      and AI/ML Engineer, I enjoy solving complex problems, collaborating across teams, and
+      contributing to open-source projects.
     </p>
 
     <p>
-      Feel free to explore my projects below or connect with me on <Link href="https://github.com/shihabhasan0161" external>GitHub</Link> and <Link href="https://www.linkedin.com/in/shihab-hasan-8444b2204/" external>LinkedIn</Link>. I’m always open to discussing new ideas, collaboration, or internship opportunities.
+      Feel free to explore my projects below or connect with me on <Link
+        href="https://github.com/shihabhasan0161"
+        external>GitHub</Link
+      > and <Link href="https://www.linkedin.com/in/shihab-hasan-8444b2204/" external>LinkedIn</Link
+      >. I’m always open to discussing new ideas, collaboration, or internship opportunities.
     </p>
 
     <div class="flex items-center gap-4">
@@ -23,7 +31,7 @@ import links from "@/lib/links";
         links
           .filter((link) => !link.disabled)
           .map((link) => (
-            <Link href={link.href} class="inline-block rounded-md p-2 ring ring-stone-700" external>
+            <Link href={link.href} class="inline-block rounded-md p-2 ring ring-zinc-300 dark:ring-zinc-700" external>
               <div class="sr-only">{link.name}</div>
               <link.icon />
             </Link>

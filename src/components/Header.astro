@@ -1,6 +1,7 @@
 ---
 import headerIcon from "@/assets/header-icon.png";
 import { Image } from "astro:assets";
+import ThemeIcon from "./ThemeIcon.astro";
 
 const navigationLinks = [
   { text: "home", href: "/" },
@@ -9,7 +10,7 @@ const navigationLinks = [
 ];
 ---
 
-<header class="flex items-center justify-between py-5 text-zinc-300">
+<header class="flex items-center justify-between py-5 text-zinc-900 dark:text-zinc-300">
   <div>
     <a href="/">
       <Image
@@ -23,15 +24,16 @@ const navigationLinks = [
       />
     </a>
   </div>
-  <nav>
+  <nav class="flex items-center gap-2">
     {
       navigationLinks.map((link, idx) => (
         <>
           {/* prettier-ignore */}
-          <a class="underline decoration-zinc-300/50" href={link.href}>{link.text}</a>
+          <a class="underline decoration-zinc-500/50 dark:decoration-zinc-300/50 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" href={link.href}>{link.text}</a>
           {idx !== navigationLinks.length - 1 && <span> / </span>}
         </>
       ))
     }
+    <ThemeIcon />
   </nav>
 </header>

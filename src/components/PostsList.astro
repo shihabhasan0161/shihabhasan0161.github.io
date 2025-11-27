@@ -13,13 +13,13 @@ posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const { limit = 0, displaySeeAllLink = false, displaySectionTitle = false } = Astro.props;
 ---
 
-<section class="text-zinc-300">
+<section class="text-zinc-900 dark:text-zinc-300">
   <div class="flex items-center justify-between">
     {displaySectionTitle && <h2 class="text-lg font-medium">Blog Posts</h2>}
     {
       displaySeeAllLink && (
         <a
-          class="text-sm text-zinc-400 underline transition-colors hover:text-zinc-300"
+          class="text-sm text-zinc-900 dark:text-zinc-400 underline transition-colors hover:text-indigo-600 dark:hover:text-indigo-400"
           href="/blog"
         >
           See all posts
