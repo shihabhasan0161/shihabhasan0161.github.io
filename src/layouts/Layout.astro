@@ -30,24 +30,20 @@ const allMetadata: Metadata = {
     <Head {...allMetadata} />
 
     <script is:inline>
-      const theme = (() => {
-        const localStorageTheme = localStorage?.getItem("theme") ?? "";
-        if (["dark", "light"].includes(localStorageTheme)) {
-          return localStorageTheme;
+      const getThemePreference = () => {
+        if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+          return localStorage.getItem("theme");
         }
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-          return "dark";
-        }
-        return "light";
-      })();
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      };
 
-      if (theme === "light") {
-        document.documentElement.classList.remove("dark");
-      } else {
+      const theme = getThemePreference();
+
+      if (theme === "dark") {
         document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
       }
-
-      window.localStorage.setItem("theme", theme);
     </script>
     <Font cssVariable="--font-inter" preload />
     <Font cssVariable="--font-satoshi" preload />

@@ -1,4 +1,5 @@
 ---
+import ExperienceList from "@/components/ExperienceList.astro";
 import Link from "@/components/Link.astro";
 import PostsList from "@/components/PostsList.astro";
 import ProjectsList from "@/components/ProjectsList.astro";
@@ -40,6 +41,7 @@ import links from "@/lib/links";
     </div>
   </div>
 
-  <ProjectsList limit={3} displaySectionTitle displaySeeAllLink />
+  <ProjectsList limit={5} displaySectionTitle displaySeeAllLink />
+  <ExperienceList />
   <PostsList displaySectionTitle displaySeeAllLink />
 </Layout>
