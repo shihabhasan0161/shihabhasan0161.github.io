@@ -13,18 +13,15 @@ import links from "@/lib/links";
   >
     <p>
       A Computer Science student at York University, currently seeking Summer 2026 internship
-      opportunities. I&apos;m passionate about building data-driven and scalable software, learning new
-      technologies, and delivering impactful solutions. Experienced as a Backend Developer Intern
-      and AI/ML Engineer, I enjoy solving complex problems, collaborating across teams, and
+      opportunities. I&apos;m passionate about building data-driven and scalable software, learning
+      new technologies, and delivering impactful solutions. Experienced as a Backend Developer
+      Intern and AI/ML Engineer, I enjoy solving complex problems, collaborating across teams, and
       contributing to open-source projects.
     </p>
 
     <p>
-      Feel free to explore my projects below or connect with me on <Link
-        href="https://github.com/shihabhasan0161"
-        external>GitHub</Link
-      > and <Link href="https://www.linkedin.com/in/shihab-hasan-8444b2204/" external>LinkedIn</Link
-      >. I’m always open to discussing new ideas, collaboration, or internship opportunities.
+      Feel free to explore my projects below or connect with me on GitHub and LinkedIn. I’m always
+      open to discussing new ideas, collaboration, or internship opportunities.
     </p>
 
     <div class="flex items-center gap-4">
@@ -32,7 +29,11 @@ import links from "@/lib/links";
         links
           .filter((link) => !link.disabled)
           .map((link) => (
-            <Link href={link.href} class="inline-block rounded-md p-2 ring ring-zinc-300 dark:ring-zinc-700" external>
+            <Link
+              href={link.href}
+              class="ease-outhover:-translate-y-1 inline-block rounded-md p-2 ring ring-zinc-300 transition-all duration-300 hover:scale-110 hover:ring-zinc-500 dark:ring-zinc-700 dark:hover:ring-zinc-400"
+              external
+            >
               <div class="sr-only">{link.name}</div>
               <link.icon />
             </Link>

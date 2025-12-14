@@ -1,9 +1,21 @@
 ---
 import experiences from "@/lib/experiences";
+import ExperienceCard from "@/components/ExperienceCard.tsx";
 ---
 
 <section class="text-zinc-900 dark:text-zinc-300">
-  <div class="flex items-center justify-between">
-    {(<h2 class="text-lg font-medium">Experience</h2>)}
+  <h2 class="text-lg font-medium mb-4">Work Experience</h2>
+
+  <div class="flex flex-col gap-y-6">
+    {experiences.map((exp) => (
+      <ExperienceCard
+        client:load
+        logoUrl={exp.logoUrl}
+        title={exp.company}
+        subtitle={exp.role}
+        period={exp.period}
+        description={exp.description}
+      />
+    ))}
   </div>
 </section>

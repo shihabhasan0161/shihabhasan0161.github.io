@@ -3,6 +3,7 @@ import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import expressiveCode from "astro-expressive-code";
 import { defineConfig } from "astro/config";
+import react from '@astrojs/react';
 
 export default defineConfig({
   site: "https://shihabhasan0161.github.io/",
@@ -10,6 +11,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   integrations: [
+    react(),
     expressiveCode({
       themes: ["tokyo-night"],
       defaultProps: {

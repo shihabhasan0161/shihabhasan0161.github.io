@@ -11,14 +11,6 @@
   --default-mono-font-family: var(--font-plex-mono), var(--font-mono);
 }
 
-
-/* Custom Cursor */
-@layer base {
-  html, body {
-    cursor: url("/src/assets/cursor/cursor.svg") 0 0, auto;
-  }
-
-  a, button {
-    cursor: url("/src/assets/cursor/cursor.svg") 0 0, pointer;
-  }
+html {
+  scroll-behavior: smooth;
 }
