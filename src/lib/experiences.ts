@@ -3,7 +3,7 @@ export interface Experience {
   role: string;
   period: string;
   logoUrl: string;
-  description?: string;
+  description?: string[];
 }
 
 const experiences: Experience[] = [
@@ -12,16 +12,24 @@ const experiences: Experience[] = [
     role: "Backend Developer Intern",
     period: "May 2025 – Aug 2025",
     logoUrl: "/assets/icons/vosyn_logo.jpg",
-    description:
-      "Implemented REST APIs in Python/Django to support new product features, improving backend reliability and performance. Optimized database queries and endpoints, reducing average API response time by 20–30%. Refactored potential bugs and FastAPI services used by Vosyn AI, cutting deployment issues by 15%+. Collaborated in Agile sprints and code reviews, contributing to backend design decisions for scalable feature rollouts.",
+    description: [
+      "Designed and delivered microservices-based REST APIs using Python (Django).",
+      "Reduced deployment-related failures by ~15% by stabilizing backend services and refactoring FastAPI components.",
+      "Increased release reliability by ~30% by testing and validating APIs with Postman and cURL, catching edge cases.",
+      "Streamlined CI/CD workflows using Docker , GitHub Actions, and Terraform , for continous deployment.",
+      "Participated in Agile sprints, sprint planning, and weekly code reviews.",
+    ],
   },
   {
     company: "AI for Impact Club",
     role: "AI/ML Engineer",
     period: "Oct 2025 – Present",
     logoUrl: "/assets/icons/ai_for_impact.jpg",
-    description:
-    "Working with a student research team on healthcare-focused ML projects for social impact. Assisting with data preprocessing, exploratory analysis, and experiment design for upcoming model development. Collaborating across disciplines to define problem scope and evaluation metrics."
+    description: [
+      "Working with a student club research team on healthcare-focused machine learning initiatives for social impact.",
+      "Supporting data preprocessing, exploratory data analysis (EDA), and experiment design for model development.",
+      "Collaborating with cross-disciplinary members to define problem scope, evaluation metrics, and research goals.",
+    ],
   },
 ];
 

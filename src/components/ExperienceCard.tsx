@@ -6,7 +6,7 @@ interface ExperienceCardProps {
   title: string;
   subtitle?: string;
   period: string;
-  description?: string;
+  description?: string[];
 }
 
 export default function ExperienceCard({
@@ -45,7 +45,11 @@ export default function ExperienceCard({
               transition={{ duration: 0.4 }}
               className="mt-2 overflow-hidden text-sm"
             >
-              {description}
+              <ul className="list-disc space-y-1 pl-5">
+                {description.map((line, idx) => (
+                  <li key={idx}>{line}</li>
+                ))}
+              </ul>
             </motion.div>
           )}
         </div>

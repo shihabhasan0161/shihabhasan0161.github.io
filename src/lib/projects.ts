@@ -9,22 +9,22 @@ const projects: Project[] = [
   {
     name: "AI Chatbot",
     description:
-      "Built a full-stack open-source chatbot with chat history, role persistence, image generation, and secure API key handling. Designed a responsive UI and clear docs and contribution guidelines, attracting contributors anenabling smooth community contributions.",
-    tech: ["Spring Boot", "React", "Docker", "Render", "Render"],
+      "Built a full-stack open-source chatbot with chat history, role persistence, image generation, and secure API key handling. Designed a responsive UI and clear docs and contribution guidelines, attracting contributors an enabling smooth community contributions.",
+    tech: ["Spring Boot", "React", "Docker", "Render"],
     link: "https://github.com/shihabhasan0161/react-spring-chatbot",
   },
   {
     name: "SmartStudent",
     description:
-      "A web application that helps students track their expenses and manage their budgets effectively.",
-    tech: ["Spring Boot", "React", "MongoDB", "CSS", "Docker", "Render", "Netlify"],
+      "Developed a full stack smart expense tracking platform, built for student and by student.",
+    tech: ["Spring Boot", "React", "MongoDB", "Docker", "Render", "Netlify"],
     link: "https://github.com/shihabhasan0161/SmartStudent-Backend",
   },
   {
     name: "CommuterBuddy",
     description:
-      "A perfect student companion finder app that helps students find study buddies, and friends for commuting with. Built it for the Hack404 Hackathon.",
-    tech: ["React-TypeScript", "Supabase", "TailwindCSS", "Netlify"],
+      "A community-driven platform connecting university students and commuters who share similar routes for a more social and safer travel. Built it for Hack404 Hackathon.",
+    tech: ["React", "TypeScript", "Supabase", "Netlify"],
     link: "https://github.com/shihabhasan0161/CommuterBuddy",
   },
   {
