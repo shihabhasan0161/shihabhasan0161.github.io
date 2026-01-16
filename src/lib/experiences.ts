@@ -8,27 +8,28 @@ export interface Experience {
 
 const experiences: Experience[] = [
   {
-    company: "Vosyn",
-    role: "Backend Developer Intern",
-    period: "May 2025 – Aug 2025",
-    logoUrl: "/assets/icons/vosyn_logo.jpg",
-    description: [
-      "Designed and delivered microservices-based REST APIs using Python (Django).",
-      "Reduced deployment-related failures by ~15% by stabilizing backend services and refactoring FastAPI components.",
-      "Increased release reliability by ~30% by testing and validating APIs with Postman and cURL, catching edge cases.",
-      "Streamlined CI/CD workflows using Docker , GitHub Actions, and Terraform , for continous deployment.",
-      "Participated in Agile sprints, sprint planning, and weekly code reviews.",
-    ],
-  },
-  {
     company: "AI for Impact Club",
     role: "AI/ML Engineer",
     period: "Oct 2025 – Present",
     logoUrl: "/assets/icons/ai_for_impact.jpg",
     description: [
-      "Working with a student club research team on healthcare-focused machine learning initiatives for social impact.",
-      "Supporting data preprocessing, exploratory data analysis (EDA), and experiment design for model development.",
-      "Collaborating with cross-disciplinary members to define problem scope, evaluation metrics, and research goals.",
+      "Worked with a student-led research team on healthcare-focused AI and machine learning initiatives for social impact.",
+      "Conducted literature reviews (arXiv, OpenReview) to guide problem formulation, metrics, and prototyping models.",
+      "Developed technical workshops on Agentic AI, demonstrating the use of GenAI tools.",
+    ],
+  },
+  {
+    company: "Vosyn",
+    role: "Backend Developer Intern",
+    period: "May 2025 – Aug 2025",
+    logoUrl: "/assets/icons/vosyn_logo.jpg",
+    description: [
+      "Designed and delivered microservices-based REST APIs using Python (Django) focusing on reusability and scalability.",
+      "Developed backend features across the SDLC, including API design, business logic, and service integration.",
+      "Built and optimized PostgreSQL database schemas and SQL queries, improving data retrieval performance.",
+      "Automated CI/CD pipelines using Docker and GitHub to streamline builds, testing and deployments.",
+      "Leveraged Google Cloud Platform (GCP) to optimize cloud storage, reducing data retrieval time.",
+      "Collaborated with frontend developers and participated in Agile sprints, contributing to end-to-end feature delivery.",
     ],
   },
 ];
