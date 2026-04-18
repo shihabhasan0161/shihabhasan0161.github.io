@@ -6,7 +6,7 @@ import { defineConfig, fontProviders } from "astro/config";
 import react from '@astrojs/react';
 
 export default defineConfig({
-  site: "https://shihabhasan0161.github.io/",
+  site: "https://shihabhasan0161.github.io",
   vite: {
     plugins: [tailwindcss()],
   },
