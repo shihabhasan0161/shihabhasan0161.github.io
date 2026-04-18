@@ -7,6 +7,13 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "Emotion Classification ML vs AI",
+    description:
+      "A simple emotion classification system with two flask API endpoints, one is SVM machine learning model and other is openai gpt model. This system classifies emotions based on 6 categories (e.g. 0: sadness, 1: joy, 5: surprise).",
+    tech: ["Python", "Flask", "Scikit-learn", "OpenAI"],
+    link: "https://github.com/shihabhasan0161/emotion-classification-ml-vs-ai",
+  },
+  {
     name: "AI Chatbot",
     description:
       "Built a full-stack open-source chatbot with chat history, role persistence, image generation, and secure API key handling. Designed a responsive UI and clear docs and contribution guidelines, attracting contributors an enabling smooth community contributions.",
