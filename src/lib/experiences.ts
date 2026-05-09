@@ -13,7 +13,7 @@ const experiences: Experience[] = [
     period: "May 2026 – Aug 2026",
     logoUrl: "/assets/icons/thp_logo.jpeg",
     description: [
-      "Incoming Summer Software Engineer Intern in Automation."
+      "Summer Software Engineer Intern in Automation and Scripting."
     ],
   },
   {
