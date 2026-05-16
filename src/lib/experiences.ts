@@ -9,16 +9,16 @@ export interface Experience {
 const experiences: Experience[] = [
   {
     company: "Trillium Health Partners",
-    role: "Software Engineer Intern",
+    role: "Information Systems Co-op",
     period: "May 2026 – Aug 2026",
     logoUrl: "/assets/icons/thp_logo.jpeg",
     description: [
-      "Summer Software Engineer Intern in Automation and Scripting."
+      "Developing automation scripts/workflows for enterprise applications validating monthly patching cycle."
     ],
   },
   {
-    company: "AI for Impact Club",
-    role: "AI/ML Engineer",
+    company: "AI for Impact (Club)",
+    role: "Machine Learning Engineer",
     period: "Oct 2025 – April 2026",
     logoUrl: "/assets/icons/ai_for_impact.jpg",
     description: [
