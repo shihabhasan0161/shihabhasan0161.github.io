@@ -8,12 +8,21 @@ export interface Experience {
 
 const experiences: Experience[] = [
   {
+    company: "FGF Brands",
+    role: "AI Solutions Engineer (Co-op)",
+    period: "(Incoming) Sep 2026 – Apr 2027",
+    logoUrl: "/assets/icons/fgf_brands_logo.jpg",
+    description: [
+      "Incoming AI Solutions Engineer (Co-op) starting Fall term."
+    ],
+  },
+  {
     company: "Trillium Health Partners",
-    role: "Information Systems Co-op",
+    role: "Information Systems (Co-op)",
     period: "May 2026 – Aug 2026",
     logoUrl: "/assets/icons/thp_logo.jpeg",
     description: [
-      "Developing automation scripts/workflows for enterprise applications validating monthly patching cycle."
+      "Developing automation scripts/workflows for enterprise applications validating monthly patching cycle.",
     ],
   },
   {
@@ -22,7 +31,7 @@ const experiences: Experience[] = [
     period: "Oct 2025 – April 2026",
     logoUrl: "/assets/icons/ai_for_impact.jpg",
     description: [
-      "Worked with student-led research team on prototyping Machine Learning Models for social impact."
+      "Worked with student-led research team on prototyping Machine Learning Models for social impact.",
     ],
   },
   {
