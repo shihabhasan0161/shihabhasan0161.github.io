@@ -1,0 +1,97 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Link from "@/components/Link.astro";
+import links from "@/lib/links";
+import type { Metadata } from "@/lib/shared-metadata";
+
+const metadata: Metadata = {
+  title: "About Me - Shihab Hasan",
+};
+---
+
+<Layout title="About me" {metadata}>
+  <div
+    class="prose prose-zinc dark:prose-invert prose-strong:text-zinc-900 dark:prose-strong:text-zinc-100 prose-a:text-indigo-600 dark:prose-a:text-indigo-400 prose-a:no-underline hover:prose-a:underline mt-6 space-y-5"
+  >
+  <img src="/public/assets/icons/me.jpg" alt="" width="100" height="100" class="w-32 h-32 rounded-full object-cover mx-auto">
+    <p>
+      My name is Shihab Hasan, and I am an Honours Bachelor of Science Computer Science Co-op
+      student at York University, with an expected graduation date of April 2028. I am interested in
+      software development, artificial intelligence, automation, backend systems, and information
+      systems. I enjoy building practical technology solutions that solve real problems and make
+      work clearer, faster, and more useful.
+    </p>
+
+    <p>
+      I chose Computer Science because I like understanding how systems work and how software can be
+      used to improve everyday tasks. I am especially interested in the connection between technical
+      problem-solving and real-world impact. Whether I am building a backend API, automating a
+      process, creating a full-stack application, or exploring AI tools, I want my work to be
+      reliable, understandable, and helpful.
+    </p>
+
+    <p>
+      My professional goal is to become a software or AI-focused technology professional who can
+      contribute to meaningful projects in a team environment. I want to continue developing my
+      technical skills while also improving my communication, collaboration, and leadership
+      abilities. I believe that strong technical work is not only about writing code; it is also
+      about understanding the problem, communicating clearly, learning from feedback, and building
+      solutions that people can actually use.
+    </p>
+
+    <div>
+      <strong> My Strengths </strong>
+      <ul>
+        <li>Practical problem-solving</li>
+        <li>Software development and backend systems</li>
+        <li>Interest in AI, automation, and information systems</li>
+        <li>Willingness to learn and improve</li>
+        <li>Collaboration with technical and non-technical team members</li>
+        <li>Clear written and oral communication</li>
+      </ul>
+    </div>
+
+    <div>
+      <strong> My Career Interests </strong>
+      <p>I am interested in roles related to:</p>
+      <ul>
+        <li>Software Development</li>
+        <li>Backend Development</li>
+        <li>AI Solutions</li>
+        <li>Automation</li>
+        <li>Information Systems</li>
+        <li>Cloud and DevOps</li>
+      </ul>
+    </div>
+
+    <div>
+      <strong>My “Why”</strong>
+      <p>
+        I am motivated by the idea that technology should make work easier and more effective. I
+        want to build tools that reduce manual effort, support better decisions, and help people
+        solve problems more confidently. My academic and co-op journey is helping me become not only
+        a stronger programmer, but also a stronger communicator, teammate, and future professional.
+      </p>
+    </div>
+
+    <div>
+      <p>Professional Links</p>
+      <div class="flex items-center gap-4">
+        {
+          links
+            .filter((link) => !link.disabled)
+            .map((link) => (
+              <Link
+                href={link.href}
+                class="ease-outhover:-translate-y-1 inline-block rounded-md p-2 ring ring-zinc-300 transition-all duration-300 hover:scale-110 hover:ring-zinc-500 dark:ring-zinc-700 dark:hover:ring-zinc-400"
+                external
+              >
+                <div class="sr-only">{link.name}</div>
+                <link.icon />
+              </Link>
+            ))
+        }
+      </div>
+    </div>
+  </div>
+</Layout>
