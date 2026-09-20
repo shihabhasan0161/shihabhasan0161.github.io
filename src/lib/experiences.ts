@@ -10,10 +10,10 @@ const experiences: Experience[] = [
   {
     company: "FGF Brands",
     role: "AI Solutions Engineer (Co-op)",
-    period: "(Incoming) Sep 2026 – Apr 2027",
+    period: "Sep 2026 – Apr 2027",
     logoUrl: "/assets/icons/fgf_brands_logo.jpg",
     description: [
-      "Incoming AI Solutions Engineer (Co-op) starting Fall term."
+      "Developing AI Solutions for FGF."
     ],
   },
   {
@@ -22,7 +22,7 @@ const experiences: Experience[] = [
     period: "May 2026 – Aug 2026",
     logoUrl: "/assets/icons/thp_logo.jpeg",
     description: [
-      "Developing automation scripts/workflows for enterprise applications validating monthly patching cycle.",
+      "Developed automation scripts/workflows for enterprise applications validating monthly patching cycle.",
     ],
   },
   {
