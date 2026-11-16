@@ -7,6 +7,13 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "AgentPilot",
+    description:
+      "AgentPilot turns natural-language instructions into browser actions, such as opening an allowed website, filling a form, or checking page content. An AI agent uses browser tools exposed through the Model Context Protocol (MCP), inspects page snapshots, and verifies the result. Configure with Siri via Shortcuts to automate daily browsing sessions.",
+    tech: ["TypeScript", "MCP", "OpenAI", "Playwright", "Cloudflare", "Python", "FastMCP"],
+    link: "https://github.com/shihabhasan0161/AgentPilot",
+  },
+  {
     name: "Emotion Classification ML vs AI",
     description:
       "A simple emotion classification system with two flask API endpoints, one is SVM machine learning model and other is openai gpt model. This system classifies emotions based on 6 categories (e.g. 0: sadness, 1: joy, 5: surprise).",
